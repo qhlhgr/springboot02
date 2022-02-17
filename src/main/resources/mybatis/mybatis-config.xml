@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--  引入properties配置文件  -->
+<!--    <properties resource="db.properties"></properties>-->
+    <!--  下划线到驼峰式命名法映射  -->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 开启二级缓存 -->
+        <!-- <setting name="cacheEnabled" value="false"></setting> -->
+    </settings>
+    <!--  类起别名  -->
+    <typeAliases>
+        <package name="com.lanou.springboot02.pojo"/>
+    </typeAliases>
+<!--    &lt;!&ndash;  插件  &ndash;&gt;-->
+<!--    <plugins>-->
+<!--        &lt;!&ndash;分页插件&ndash;&gt;-->
+<!--        <plugin interceptor="com.github.pagehelper.PageInterceptor">-->
+<!--            &lt;!&ndash; 如果pageNum超出合法范围，是否返回正确结果 &ndash;&gt;-->
+<!--            <property name="reasonable" value="true"/>-->
+<!--            &lt;!&ndash; 如果pageSize传入0，是否返回所有数据（不分页） &ndash;&gt;-->
+<!--            <property name="pageSizeZero" value="true"/>-->
+<!--        </plugin>-->
+<!--    </plugins>-->
+
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            &lt;!&ndash;    使用JDBC事务管理机制        &ndash;&gt;-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            &lt;!&ndash;     使用连接池     UNPOOLED不使用连接池  &ndash;&gt;-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="${driver}"/>-->
+<!--                <property name="url" value="${url}"/>-->
+<!--                <property name="username" value="${username}"/>-->
+<!--                <property name="password" value="${password}"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+<!--     <mappers>-->
+<!--&lt;!&ndash;		使用maven 暂时不能使用此方式<mappers>&ndash;&gt;-->
+<!--        <package name="com.lanou.mapper"/>-->
+<!--    </mappers>-->
+</configuration>
